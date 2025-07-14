@@ -47,9 +47,9 @@ import vpsLogo from './assets/education_logo/vps_logo.png';
 import chatapp from './assets/work_logo/chatApp.png';
 import bachelor from './assets/work_logo/bachelor.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
-// import taskremLogo from './assets/work_logo/task_rem.png';
+
 import npmLogo from './assets/work_logo/npm.png';
-// import webverLogo from './assets/work_logo/web_dig.png';
+
 
 
 
