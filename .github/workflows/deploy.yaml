@@ -26,7 +26,7 @@ jobs:
         run: npm run build
         working-directory: frontend
 
-      - name: 🚀 Deploy to S3
+      - name: 🚀 Deploy to S3 from dist/
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --delete
@@ -35,4 +35,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          SOURCE_DIR: frontend/dist
+        working-directory: frontend/dist
