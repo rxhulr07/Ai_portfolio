@@ -39,16 +39,16 @@ import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
+import lpuLogo from './assets/education_logo/lpu.png';
+import sbteLogo from './assets/education_logo/sbte.png';
+import mcesLogo from './assets/education_logo/mces.png';
 
 // Project Section Logo's
 import chatapp from './assets/work_logo/chatApp.png';
 import bachelor from './assets/work_logo/bachelor.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
 
-import npmLogo from './assets/work_logo/npm.png';
+
 
 
 
@@ -131,6 +131,7 @@ export const SkillsInfo = [
         " Next Js",
       ],
     },
+
     {
       id: 1,
       img: agcLogo,
@@ -169,7 +170,7 @@ export const SkillsInfo = [
   export const education = [
     {
       id: 0,
-      img: glaLogo,
+      img: lpuLogo,
       school: "Lovely Professional University",
       date: "Aug 2023 - July 2026",
       grade: "7.20 CGPA",
@@ -178,31 +179,23 @@ export const SkillsInfo = [
     },
     {
       id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
+      img: sbteLogo,
+      school: "State board of Technial Education",
+      date: "2019 july - 2022 July ",
+      grade: "78.2%",
       desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
+      degree: "Diploma in Computer Science",
     },
     {
       id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
+      img: mcesLogo,
+      school: "Millia Convent English school , Rambagh",
+      date: "Apr 2018 - March 2019",
+      grade: "82",
+      desc: "I have my matriculation from millia convent.",
+      degree: "CBSE(X)",
     },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
-    },
+   
   ];
   
   export const projects = [
@@ -235,17 +228,6 @@ export const SkillsInfo = [
       tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/codingmastr/Movie-Recommendation-App",
       webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Email Validator NPM Package",
-      description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: npmLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-    },
-   
-    
+    }, 
   ];  
+
