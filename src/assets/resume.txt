@@ -1,44 +1,61 @@
 const RESUME_CONTEXT = `
-Hi, my name is Shubhachand Patel.
-I'm a Full Stack Developer passionate about building exceptional digital experiences.
+Hi, my name is Rahul Ranjan.
+I'm a Full Stack Developer focused on building scalable and real-time web applications.
 
 🔹 Profile:
-I’m a third-year B.Tech student at Lovely Professional University (LPU), pursuing a degree in Computer Science (2022–2026). I specialize in building responsive and user-friendly web applications using modern technologies like React, Node.js, MongoDB, and Express.
+I’m a third-year B.Tech student at Lovely Professional University (LPU), pursuing Computer Science and Engineering (2023–2026). I work with modern JavaScript technologies and love building responsive, efficient, and interactive applications.
 
-I’m originally from Sambalpur, a city in the state of Odisha, India. My background has helped shape my problem-solving mindset, cultural empathy, and collaborative nature. I am fluent in English, Hindi, and Odia.
+I'm from Purnia, Bihar, India. My journey from a diploma to engineering has sharpened my ability to adapt, solve problems, and continuously learn. I communicate fluently in English and Hindi.
 
 🔹 Technical Skills:
-- Frontend: React.js, Tailwind CSS, HTML, CSS, JavaScript
-- Backend: Node.js, Express.js, PHP, Prisma, GraphQL
-- Database: MongoDB
-- Other: Git, C++, Java
+- Frontend: React.js, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript
+- Backend: Node.js, Express.js
+- Database: MongoDB, MySQL
+- Other: Git, AWS (S3, CI/CD), C++, Java, Socket.io
 
 🔹 Proficiency:
 - React.js: 90%
 - Node.js: 85%
-- MongoDB: 85%
-- GraphQL: 80%
-- Prisma: 75%
-- PHP: 70%
+- MongoDB: 80%
+- Express.js: 85%
+- Tailwind CSS: 85%
+- Java: 75%
 
 🔹 Projects:
-- **Scribble**: A productivity web app where users can create to-do lists, take React quizzes, and store personal notes.
-  Tech Used: React, Tailwind CSS
+- **Chat App**: A full-stack real-time chat application built using the MERN stack and Socket.io for seamless, instant messaging.
+  Tech Used: React.js, Node.js, Express, MongoDB, Socket.io, Tailwind CSS  
+  Render: [chat-app-4xez.onrender.com](https://chat-app-4xez.onrender.com)  
+  GitHub: [rxhulr07/Real_time_chat_App](https://github.com/rxhulr07/Real_time_chat_App)
+
+- **Personal Portfolio**: A fully responsive portfolio showcasing my work and an AI-powered chat assistant using Gemini API.
+  Tech Used: React, Vite, Tailwind CSS, GitHub Actions, AWS S3  
+  GitHub: [rxhulr07/Ai_portfolio](https://github.com/rxhulr07/Ai_portfolio)
+
+- **Bachelor’s Recipe Website**: A web application for browsing and managing rental-style recipes and listings.
+  Tech Used: Node.js, Express.js, React, MongoDB, Redux, Bootstrap  
+  Render: [bachelors-recipe.onrender.com](https://bachelors-recipe.onrender.com)  
+  GitHub: [rxhulr07/Bachelors-Recipe](https://github.com/rxhulr07/Bachelors-Recipe)
 
 🔹 Certificates:
-- Introduction to IoT (NPTEL)
-- Building Web Applications in PHP (Coursera)
-- Server-Side Development with NodeJS (Coursera)
-- Python Bootcamp (CodingBlockLPU)
+- Prompt Engineering for ChatGPT (Coursera)
+- Frontend Web Developer (Coursera)
+- Server-side JavaScript with Node.js (Coursera)
+- Cloud Computing (NPTEL Swayam)
+
+🔹 Internship:
+- **Geeks For Geeks – Summer Internship (16 Weeks)**  
+  Completed a structured DSA course using Java, focusing on solving problems involving arrays, linked lists, trees, graphs, and more.  
+  Enhanced problem-solving skills through hands-on challenges and quizzes.  
+  Certificate: [GeeksForGeeks Certificate](#)
 
 🔹 About Me:
-Outside of coding, I’m passionate about fitness, AI tools, and personal growth. I enjoy learning new technologies, contributing to side projects, and keeping up with the latest web and AI innovations. I also like to explore LLMs and integrate intelligent agents into my work.
+Beyond tech, I enjoy exploring AI tools, backend systems, and open-source contributions. I believe in learning by building and love integrating smart tools into practical projects.
 
 🔹 Goals:
-My career goal is to join a fast-paced tech company where I can contribute to scalable backend systems, AI integrations, or full-stack products. I am also working toward contributing to open-source and building AI-based tools.
+I aim to join a forward-thinking tech company where I can contribute to real-time systems, AI integration, or scalable full-stack products. I'm actively developing a strong foundation in backend architecture and intelligent applications.
 
 🔹 Current Focus:
-Currently, I'm enhancing my personal portfolio with a custom AI chatbot powered by Google's Gemini API, trained to answer questions based on my resume and skills. I'm also diving deeper into prompt engineering, LangChain, and retrieval-augmented generation (RAG).
+Currently refining my portfolio with AI features and deepening my skills in prompt engineering, RAG pipelines, and real-time communication with WebSockets.
 
-Feel free to ask me anything about my education, skills, projects, or certifications!
+Feel free to ask me anything about my skills, projects, certifications, or experience!
 `;

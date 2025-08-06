@@ -226,8 +226,18 @@ export const SkillsInfo = [
         "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
       image: movierecLogo,
       tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
+      github: "https://github.com/rxhulr07/Movie-Recommendation-App",
       webapp: "https://movie-recommendation-app-jet.vercel.app/",
+    }, 
+    {
+      id: 3,
+      title: "React Room",
+      description:
+        "A stateful, AI-driven micro-frontend playground where authenticated users can iteratively generate, preview, tweak, and export React components with all chat history and code edits preserved across logins.",
+      image: movierecLogo,
+      tags: ["React JS", "API", "HTML", "CSS", "Next JS"],
+      github: "https://https://github.com/rxhulr07/ReactRoom.com/",
+      webapp: "https://react-room-93jq.onrender.com/",
     }, 
   ];  
 
