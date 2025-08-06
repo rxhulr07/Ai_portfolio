@@ -41,6 +41,7 @@ async function initChat() {
  */
 export async function askGemini(message) {
   try {
+
     const chatInstance = await initChat();
     const result = await chatInstance.sendMessage(message);
     const response = await result.response;

@@ -77,23 +77,74 @@ If the answer is not in the resume, say "Sorry, I don't have that information."
 
   // Send user message
   const handleSendMessage = async () => {
-    if (!inputMessage.trim() || isLoading) return;
-    const newUserMessage = { role: "user", text: inputMessage };
-    setMessages((prev) => [...prev, newUserMessage]);
-    setInputMessage("");
-    setIsLoading(true);
-    try {
-      const botReplyText = await askGemini(newUserMessage.text);
-      setMessages((prev) => [...prev, { role: "bot", text: botReplyText }]);
-    } catch (error) {
+  if (!inputMessage.trim() || isLoading) return;
+
+  const normalized = inputMessage.trim().toLowerCase();
+  const newUserMessage = { role: "user", text: inputMessage };
+
+  setMessages((prev) => [...prev, newUserMessage]);
+  setInputMessage("");
+  setIsLoading(true);
+
+  try {
+    // 🎉 Random greetings
+    const greetings = [
+      "Hey there! 😊 I'm Shreya. How can I help you today?",
+      "Hi! I'm Shreya, your assistant. What would you like to know?",
+      "Hello! 👋 Shreya here. Ready when you are!",
+      "Hey! Shreya at your service. Ask me anything!",
+      "Hiya! 😊 Need help with something?",
+    ];
+
+    // 😂 Random jokes
+    const jokes = [
+      "Why don't programmers like nature? It has too many bugs. 🐛",
+      "Why did the developer go broke? Because they used up all their cache. 💸",
+      "Debugging: removing the needles from the haystack. 🧵",
+      "Why do Java developers wear glasses? Because they can't C#. 🤓",
+    ];
+
+    // 🕒 Get current time/date
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString();
+    const currentDate = now.toLocaleDateString();
+
+    // 🧠 Pattern checks
+    if (/\b(hi|hello|hey)[\s,]*shreya\b/.test(normalized)) {
+      const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+      setMessages((prev) => [...prev, { role: "bot", text: greeting }]);
+    } else if (/\bhow\s+are\s+you\b/.test(normalized)) {
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: `Error: ${error.message}` },
+        { role: "bot", text: "I'm doing great, thanks for asking! 😊 How can I assist you today?" },
       ]);
-    } finally {
-      setIsLoading(false);
+    } else if (/\btell me a joke\b/.test(normalized)) {
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      setMessages((prev) => [...prev, { role: "bot", text: joke }]);
+    } else if (/\bwhat\s+(is|time)\b.*\b(time|now)\b/.test(normalized)) {
+      setMessages((prev) => [
+        ...prev,
+        { role: "bot", text: `It's currently ${currentTime}. ⏰` },
+      ]);
+    } else if (/\bwhat\s+date\s+is\s+it\b|\btoday['’]s\s+date\b/.test(normalized)) {
+      setMessages((prev) => [
+        ...prev,
+        { role: "bot", text: `Today's date is ${currentDate}. 📅` },
+      ]);
+    } else {
+      // 🧠 Default Gemini fallback
+      const botReplyText = await askGemini(newUserMessage.text);
+      setMessages((prev) => [...prev, { role: "bot", text: botReplyText }]);
     }
-  };
+  } catch (error) {
+    setMessages((prev) => [
+      ...prev,
+      { role: "bot", text: `Error: ${error.message}` },
+    ]);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   // Suggest next question
   const handleSuggestNextQuestion = async () => {
@@ -174,7 +225,7 @@ If the answer is not in the resume, say "Sorry, I don't have that information."
               <span role="img" aria-label="robot" className="mr-2">
                 🤖
               </span>{" "}
-              Chat with Shubhachand
+              Chat with Shreya
             </span>
             <button
               onClick={() => setShowChat(false)}
@@ -237,7 +288,7 @@ If the answer is not in the resume, say "Sorry, I don't have that information."
             <div className="flex">
               <input
                 type="text"
-                className="flex-1 border text-white border-gray-300 px-4 py-2 rounded-lg mr-2 outline-none focus:ring-2 focus:ring-blue-400 transition-all text-sm"
+                className="flex-1 border text-black border-gray-300 px-4 py-2 rounded-lg mr-2 outline-none focus:ring-2 focus:ring-blue-400 transition-all text-sm"
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={(e) => {
